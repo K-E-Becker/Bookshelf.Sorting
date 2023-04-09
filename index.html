@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section id="options">
+        <select id="dropDown">
+          <option value="blank">Choose one...</option>
+          <option value="A-title-Z">Sort A - Z by Title</option>
+          <option value="Z-title-A">Sort Z - A by Title</option>
+          <option value="A-author-Z">Sort A - Z by Author</option>
+          <option value="Z-author-A">Sort Z - A by Author</option>
+        </select>
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search for Title or Author"
+        />
+        <button type="button" id="searchButton">Search</button>
+        <button type="button" id="clear">Clear</button>
+        <span id="favorite"></span>
+      </section>
+      <ul class="bookList"></ul>
+
+      <!-- the elements you create in render functions will append here -->
+    </main>
+
+    <script src="js/book-data.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/bookshelf.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
