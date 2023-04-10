@@ -1,6 +1,24 @@
 const favArray = [];
 const favObject = {};
 
+// --------------------------
+//#GRADING NOTES
+// --------------------------
+// 1. Bookshelf is refactored so that map is used to generate DOM elements from the array of books.
+//      I see this in your render() method. Great job! - SLL
+// 2. Each book has a "Favorite" button that will add the selected book to a maintained list of the user's favorite books.
+// This list should be maintained by Bookshelf.
+//      I see that you are storing that data in here, I would love to see maybe a method  countFavorites() in this class so the
+//      favorites are actually being maintained by the Class BookShelf instead of globally. What you did worked though and I am
+//      excited to see you making this work! - SLL
+// Re: Search and Sort - So, right now, the search and sort are only being done via the DOM and not manipulating anything in the
+// class. So you are trying to .sort an array of HTML nodes. That isn't readable in JS. Writing a method on Bookshelf itself that
+// will sort and filter things on the JS side and then writing an eventlistener that calls those methods on the HTML side will be
+// the best route for this. If this isn't covered in review or you still need more help with this, lmk and I can jump in a room
+// to help you with it. -SLL
+// --------------------------
+//#end GRADING NOTES
+
 //Bookshelf class
 class BookShelf {
   constructor(htmlElm, bookArr = []) {
